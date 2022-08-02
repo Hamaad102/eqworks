@@ -1,7 +1,7 @@
+// @ts-nocheck
 import { NextApiRequest, NextApiResponse } from 'next'
 import { tokenBucket } from '../../lib/tokenBucket'
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default async (req: NextApiRequest, res: NextApiResponse) => {
 	let ip
 	if (req.headers['x-forwarded-for']) {
